@@ -1,0 +1,21 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain
+        run: swift --version
+      - name: Tests
+        run: swift test
+      - name: Package app
+        run: ./scripts/build-app.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Icon-Spice-macOS
+          path: dist/

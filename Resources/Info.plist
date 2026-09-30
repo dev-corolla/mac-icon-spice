@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key><string>com.lukakorolija.IconSpice</string>
+    <key>CFBundleName</key><string>Icon Spice</string>
+    <key>CFBundleDisplayName</key><string>Icon Spice</string>
+    <key>CFBundleExecutable</key><string>MacIconSpice</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSSystemAdministrationUsageDescription</key><string>Icon Spice changes the icons of apps you select and restores your previous icons when requested.</string>
+</dict>
+</plist>
