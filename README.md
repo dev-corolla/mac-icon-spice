@@ -93,7 +93,9 @@ SIGNING_IDENTITY="Developer ID Application: Your Name (TEAMID)" \
 NOTARY_PROFILE="your-notary-profile" ./scripts/notarize.sh
 ```
 
-The script creates a universal app, notarizes and staples it, and produces a ZIP and SHA-256. Publishing a GitHub release and Homebrew cask needs a public repository/release URL; neither is published by this scaffold. See [release checklist](docs/RELEASE.md).
+The script creates a universal app, notarizes and staples it, and produces a ZIP and SHA-256. The [public source repository](https://github.com/dev-corolla/mac-icon-spice) is available now. A notarized download and Homebrew cask are not published yet. See [release checklist](docs/RELEASE.md).
+
+The [launch video project](promo/README.md) contains reproducible square and widescreen presentations using actual local previews. [Launch copy](docs/LAUNCH.md) links to the original tweet that inspired Icon Spice.
 
 ## License and credit
 
