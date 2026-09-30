@@ -43,8 +43,11 @@ struct IconSpiceApp: App {
     @State private var model = AppModel.shared
 
     var body: some Scene {
-        MenuBarExtra("Icon Spice", systemImage: "paintpalette.fill") {
+        MenuBarExtra {
             SpiceMenu(model: model, openLibrary: delegate.showLibrary)
+        } label: {
+            Image(nsImage: PepperArtwork.menuIcon)
+                .accessibilityLabel("Icon Spice")
         }
         .commands {
             CommandGroup(replacing: .newItem) { }

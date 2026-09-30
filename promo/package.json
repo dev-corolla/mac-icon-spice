@@ -27,8 +27,8 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render:square": "remotion render LaunchSquare out/icon-spice-launch-square.mp4 --codec=h264 --pixel-format=yuv420p --crf=18",
-    "render:wide": "remotion render LaunchWide out/icon-spice-launch-wide.mp4 --codec=h264 --pixel-format=yuv420p --crf=18",
-    "poster": "remotion still LaunchSquare out/icon-spice-poster.png --frame=230"
+    "render:square": "remotion render LaunchSquare out/icon-spice-launch-square-15s.mp4 --codec=h264 --pixel-format=yuv420p --crf=18",
+    "render:wide": "remotion render LaunchWide out/icon-spice-launch-wide-15s.mp4 --codec=h264 --pixel-format=yuv420p --crf=18",
+    "poster": "remotion still LaunchSquare out/icon-spice-poster.png --frame=180"
   }
 }

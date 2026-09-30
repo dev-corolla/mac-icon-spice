@@ -42,8 +42,8 @@ struct LibraryView: View {
     private var sidebar: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(spacing: 9) {
-                Image(systemName: "paintpalette.fill")
-                    .font(.system(size: 23)).foregroundStyle(SpiceStyle.accent)
+                Image(nsImage: PepperArtwork.image(pixels: 64))
+                    .resizable().frame(width: 28, height: 28)
                 Text("Icon Spice").font(.system(size: 19, weight: .bold, design: .rounded))
             }
             .padding(.top, 28).padding(.bottom, 34).padding(.horizontal, 20)

@@ -13,11 +13,11 @@ Requires macOS 14 or newer and Swift 6.2 or newer (Xcode 26+). macOS 14 is a pro
 open "dist/Icon Spice.app"
 ```
 
-Opening the app shows its library window, Dock icon, and normal macOS application menu. Quit with **⌘Q**, **Icon Spice → Quit Icon Spice**, or the **Quit Icon Spice** button below Settings in the library sidebar. Closing the library keeps Icon Spice running in the menu bar and hides its Dock icon; open the app again or choose **Open Icon Spice** from the palette menu to bring it back.
+Opening the app shows its library window, Dock icon, and normal macOS application menu. Quit with **⌘Q**, **Icon Spice → Quit Icon Spice**, or the **Quit Icon Spice** button below Settings in the library sidebar. Closing the library keeps Icon Spice running in the menu bar and hides its Dock icon; open the app again or choose **Open Icon Spice** from the pepper menu to bring it back.
 
 For an optimized build, omit `--debug`. Open `Package.swift` in Xcode to work on the project. Run the `MacIconSpice` scheme for the UI or `iconspice` for the command line.
 
-1. Click the palette in the menu bar to open the library.
+1. Click the pepper in the menu bar to open the library.
 2. Generate previews. Nothing is applied during generation.
 3. Select the apps you like and choose **Apply selected**.
 4. If macOS prompts for App Management, allow access. Settings links to the relevant pane when a change fails.

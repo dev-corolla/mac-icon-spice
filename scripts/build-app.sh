@@ -25,7 +25,9 @@ cp "$BIN_DIR/MacIconSpice" "$APP_DIR/Contents/MacOS/MacIconSpice"
 cp "$BIN_DIR/iconspice" "$APP_DIR/Contents/Resources/iconspice"
 cp LICENSE "$APP_DIR/Contents/Resources/LICENSE"
 cp -R ThirdParty/macIconChanger "$APP_DIR/Contents/Resources/ThirdParty/"
-swift scripts/create-app-icon.swift "$STAGE_DIR/AppIcon.iconset"
+swiftc -swift-version 6 -parse-as-library Sources/IconSpice/PepperArtwork.swift \
+    scripts/create-app-icon.swift -o "$STAGE_DIR/create-app-icon"
+"$STAGE_DIR/create-app-icon" "$STAGE_DIR/AppIcon.iconset"
 /usr/bin/iconutil -c icns "$STAGE_DIR/AppIcon.iconset" -o "$APP_DIR/Contents/Resources/AppIcon.icns"
 SIGN_IDENTITY="${SIGNING_IDENTITY:--}"
 SIGN_FLAGS=(--force --sign "$SIGN_IDENTITY")

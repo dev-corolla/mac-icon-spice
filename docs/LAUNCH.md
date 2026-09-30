@@ -2,7 +2,7 @@
 
 Quote this original post: https://x.com/corolladev/status/2104495438959145176
 
-Attach `promo/out/icon-spice-launch-square.mp4`. The widescreen version is available for other placements. Both are 32 seconds and readable without sound.
+Attach `promo/out/icon-spice-launch-square-15s.mp4`. The widescreen version is available for other placements. Both are 15 seconds and readable without sound.
 
 ## Quote-post copy
 

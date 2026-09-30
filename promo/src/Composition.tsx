@@ -74,7 +74,10 @@ const Note: React.FC<{
   </div>
 );
 
-const Scene: React.FC<{ part: number }> = ({ part }) => {
+const Scene: React.FC<{ part: number; chapter?: number }> = ({
+  part,
+  chapter = part,
+}) => {
   const frame = useCurrentFrame();
   const wide = useVideoConfig().width > 1080;
   const dark = part === 0 || part === 5;
@@ -135,7 +138,7 @@ const Scene: React.FC<{ part: number }> = ({ part }) => {
         />
         <span>Icon Spice</span>
         <span style={{ marginLeft: "auto", opacity: 0.5, fontSize: 17 }}>
-          {String(part + 1).padStart(2, "0")} / {chapters[part]}
+          {String(chapter + 1).padStart(2, "0")} / {chapters[part]}
         </span>
       </div>
       <div
@@ -596,6 +599,23 @@ export const LaunchVideo = () => (
     </Sequence>
     <Sequence from={810} durationInFrames={150}>
       <Scene part={5} />
+    </Sequence>
+  </AbsoluteFill>
+);
+
+export const ShortLaunchVideo = () => (
+  <AbsoluteFill>
+    <Sequence durationInFrames={90}>
+      <Scene part={0} chapter={0} />
+    </Sequence>
+    <Sequence from={90} durationInFrames={150}>
+      <Scene part={2} chapter={1} />
+    </Sequence>
+    <Sequence from={240} durationInFrames={120}>
+      <Scene part={3} chapter={2} />
+    </Sequence>
+    <Sequence from={360} durationInFrames={90}>
+      <Scene part={5} chapter={3} />
     </Sequence>
   </AbsoluteFill>
 );
